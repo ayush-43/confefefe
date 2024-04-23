@@ -67,7 +67,7 @@ const Navbar = () => {
           <img
             src={"/src/assets/logomain.png"}
             alt="logo"
-            className="h-15 w-15 object-contain"
+            className="h-15 w-15 object-contain cursor-pointer"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer tracking-wider">
             Waste Management & &nbsp;
