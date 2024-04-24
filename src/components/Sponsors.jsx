@@ -15,15 +15,15 @@ const SponsorImage = (sponsor) => {
 
 const Sponsors = () => {
   return (
-    <div id="sponsors">
+    <div id="sponsors" className="flex flex-col items-center justify-center">
       <h2 className={styles.sectionHeadText}>Sponsors</h2>
 
       {sponsorsData.map((sponsor) => (
-        <div className="flex flex-col mt-10">
+        <div className="flex flex-col mt-10" key={sponsor.title}>
           <div>
             <h2 className={styles.sectionSubText}>{sponsor.title}</h2>
           </div>
-          <div className="flex flex-row flex-wrap">
+          <div className="flex flex-row flex-wrap justify-center">
             {sponsor.data.map((data, index) => (
               <div className="w-28 h-28 mr-10" key={index}>
                 <SponsorImage sponsor={data} />

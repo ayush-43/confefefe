@@ -52,13 +52,13 @@ const SpeakerCard = ({
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        {/* <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
-        </div>
+        </div> */}
       </Tilt>
     </motion.div>
   );
@@ -127,7 +127,7 @@ const Speakers = () => {
         </div>
         <div className="flex justify-center mt-4">
           {panel1Data && (
-            <div className="panel-container text-center bg-gray-200 p-20 pr-6 rounded-md">
+            <div className="panel-container text-center bg-gray-200 p-20 pr-6  rounded-md">
               <Panels panel={panel1Data} />
             </div>
           )}

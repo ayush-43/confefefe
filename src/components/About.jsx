@@ -8,6 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { max } from "three/examples/jsm/nodes/Nodes.js";
 import { SectionWrapper } from "../hoc";
 import { useNavigate } from "react-router-dom";
+import carrentImage from "../assets/carrent.png";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -38,40 +39,45 @@ const About = () => {
   const navigate = useNavigate();
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h2 className={`mt-2 ${styles.sectionHeadText}`}>About WMCC</h2>{" "}
-        {/* Adjusted margin-top */}
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-green-900 text-[20px] leading-[30px]"
-      >
-        WMCC serves as a vital platform for fostering dialogue, sharing
-        insights, and mobilizing stakeholders towards sustainable solutions. By
-        bringing together industry leaders, policymakers, innovators, and other
-        stakeholders, KWMC aims to address the multifaceted challenges of waste
-        management comprehensively. WMCC serves as a vital platform for
-        fostering dialogue, sharing insights, and mobilizing stakeholders
-        towards sustainable solutions. By bringing together industry leaders,
-        policymakers, innovators, and other stakeholders, KWMC aims to address
-        the multifaceted challenges of waste management comprehensively. <br />
-      </motion.p>
-
-      <div className="mt-20">
+      <div className="flex flex-wrap items-center justify-center">
+        <motion.div variants={textVariant()} className="text-center">
+          <h2 className={`mt-2 ${styles.sectionHeadText}`}>About WMCC</h2>
+        </motion.div>
+        <div className="flex flex-wrap items-center justify-center mt-4">
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-4 text-green-900 text-[20px] leading-[30px] max-w-[50%] pr-3"
+          >
+            WMCC serves as a vital platform for fostering dialogue, sharing
+            insights, and mobilizing stakeholders towards sustainable solutions.
+            By bringing together industry leaders, policymakers, innovators, and
+            other stakeholders, KWMC aims to address the multifaceted challenges
+            of waste management comprehensively. WMCC serves as a vital platform
+            for fostering dialogue, sharing insights, and mobilizing
+            stakeholders towards sustainable solutions. By bringing together
+            industry leaders, policymakers, innovators, and other stakeholders,
+            KWMC aims to address the multifaceted challenges of waste management
+            comprehensively.
+          </motion.p>
+          <div className="max-w-[50%]">
+            {/* Replace 'imageSrc' with the actual source of your image */}
+            <img src={carrentImage} alt="About WMCC" className="w-full" />
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 text-center">
         <h2 className={styles.sectionHeadText}>Conference Highlights</h2>
-        <br />
-        {/* <p className="text-black text-base">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, a.
-          Eveniet esse perferendis voluptatibus sit quisquam. Commodi ad rem
-          quibusdam et ab vitae magnam praesentium totam, nesciunt voluptatum
-          quia dolorem.
-        </p> */}
-        <p className="text-black text-[20px] leading-[30px]">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, a.
-          Eveniet esse perferendis voluptatibus sit quisquam. Commodi ad rem
-          quibusdam et ab vitae magnam praesentium totam, nesciunt voluptatum
-          quia dolorem.
+
+        <p className="mt-4 text-green-900 text-[20px] leading-[30px]">
+          WMCC serves as a vital platform for fostering dialogue, sharing
+          insights, and mobilizing stakeholders towards sustainable solutions.
+          By bringing together industry leaders, policymakers, innovators, and
+          other stakeholders, KWMC aims to address the multifaceted challenges
+          of waste management comprehensively. WMCC serves as a vital platform
+          for fostering dialogue, sharing insights, and mobilizing stakeholders
+          towards sustainable solutions. By bringing together industry leaders,
+          policymakers, innovators, and other stakeholders, KWMC aims to address
+          the multifaceted challenges of waste management comprehensively.
         </p>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">
@@ -79,17 +85,14 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-
-      <button
-        onClick={() => navigate("/highlights")}
-        className="mt-20 text-green-600 hover:cursor-pointer bg-white p-2 border-r-2"
-      >
-        See more...
-      </button>
-      <button
-        onClick={() => navigate("/highlights")}
-        className="mt-20 text-green-600 hover:cursor-pointer bg-white p-2 border-r-2"
-      ></button>
+      <div className="flex justify-center mt-10">
+        <button
+          onClick={() => navigate("/highlights")}
+          className="text-green-600 hover:cursor-pointer border-green-600 px-4 py-4 mt-5 font-bold"
+        >
+          See more...
+        </button>
+      </div>
     </>
   );
 };

@@ -35,6 +35,10 @@ export const navLinks = [
     title: "About WMCC",
   },
   {
+    id: "highlights",
+    title: "Highlights",
+  },
+  {
     id: "schedule",
     title: "Schedule",
   },
