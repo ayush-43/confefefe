@@ -28,9 +28,12 @@ const ServiceCard = ({ index, title, icon }) => {
 const Highlights = () => {
   return (
     <div className="mt-20 p-10 h-2vh bg-white">
-      <h2 className={styles.sectionHeadText}>Hghlights</h2>
-      <p className={styles.heroSubText}>
-        bsdk askdaskldaksdhakshdlashdl ahsdl ahmasd aksdhkashdlasd{" "}
+      <h2 className={styles.sectionHeadText}>Highlights</h2>
+      <p className="text-black text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+        sed nobis vel. Provident, nulla in esse maxime tenetur reiciendis
+        voluptas ea autem ullam doloremque magnam saepe iure repellendus
+        corrupti quis.
       </p>
     </div>
   );

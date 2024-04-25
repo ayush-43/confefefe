@@ -68,16 +68,15 @@ const About = () => {
       <div className="mt-20 text-center">
         <h2 className={styles.sectionHeadText}>Conference Highlights</h2>
 
-        <p className="mt-4 text-green-900 text-[20px] leading-[30px]">
-          WMCC serves as a vital platform for fostering dialogue, sharing
-          insights, and mobilizing stakeholders towards sustainable solutions.
-          By bringing together industry leaders, policymakers, innovators, and
-          other stakeholders, KWMC aims to address the multifaceted challenges
-          of waste management comprehensively. WMCC serves as a vital platform
-          for fostering dialogue, sharing insights, and mobilizing stakeholders
-          towards sustainable solutions. By bringing together industry leaders,
-          policymakers, innovators, and other stakeholders, KWMC aims to address
-          the multifaceted challenges of waste management comprehensively.
+        <p className="mt-4 text-green-900 text-[20px] leading-[30px] justify">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
+          veritatis quas. Veritatis, provident dolor, cumque, repellat qui
+          praesentium architecto minima tempore quas debitis aut. Incidunt
+          inventore voluptas ullam qui dolor quae laborum ducimus porro
+          excepturi laboriosam, at, voluptatem nihil impedit obcaecati quas
+          voluptatum. Tenetur, aperiam repellendus. Commodi fuga necessitatibus
+          dolor. Quae, fugit voluptates. Ipsa cupiditate beatae, quis quia
+          officia labore.
         </p>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">

@@ -23,16 +23,14 @@ const Hero = () => {
         </div>
 
         <div className="text-center mt-0">
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white lg`}>
             Waste Management &{" "}
             <span className="text-[#22c55e]">Climate Conference</span>
           </h1>
           <br />
           <hr className="border-b-2 border-white w-100" />
           <br />
-          <p
-            className={`${styles.heroSubText} font-extrabold italic mt-2 text-white-100`}
-          >
+          <p className="font-bold text-2xl mt-2 text-white-100">
             Nepal's Biggest Waste Management <br className="sm:block hidden" />
             and Climate Conference.
           </p>

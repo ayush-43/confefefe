@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components";
 import { Home, Nominations, Speakers, GreenAwards, Highlights } from "./pages";
 import FormfacadeEmbed from "@formfacade/embed-react";
+import "./index.css";
 
 const App = () => {
   return (

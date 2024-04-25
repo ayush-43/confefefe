@@ -2,21 +2,12 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { max } from "three/examples/jsm/nodes/Nodes.js";
 import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
+const ProjectCard = ({ index, name, description, image }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -28,7 +19,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[280px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -54,33 +45,32 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()} className="text-center">
-        <p className={styles.sectionSubText}>Panel Details</p>
         <h2 className={styles.sectionHeadText}>Our Speakers</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-center"
+          className="mt-3 text-secondary text-[17px] leading-[30px] text-center"
         >
           Join us on this revolutionary discussion about Climate Change and
           Waste Management.
         </motion.p>
       </div>
-      {/* <div className="mt-10 flex justify-center"> */}
-      <div className="mt-10 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
-        <div className="mt-10">
-          <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={() => navigate("/speakers")}
-          >
-            See all..
-          </button>
-          {/* </div> */}
+      <div className="bg-gray-300 px-10 py-8">
+        <div className="grid grid-cols-4 gap-12">
+          {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
         </div>
+      </div>
+      <div className="mt-10 flex flex-col items-center justify-center">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => navigate("/speakers")}
+        >
+          See all..
+        </button>
       </div>
     </>
   );

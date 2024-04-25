@@ -35,16 +35,16 @@ export const navLinks = [
     title: "About WMCC",
   },
   {
-    id: "highlights",
-    title: "Highlights",
+    id: "speakers",
+    title: "Speakers",
   },
   {
     id: "schedule",
     title: "Schedule",
   },
   {
-    id: "speakers",
-    title: "Speakers",
+    id: "highlights",
+    title: "Highlights",
   },
   {
     id: "greenawards",
@@ -77,6 +77,30 @@ const services = [
     title: "Green Awards Ceremony",
     icon: creator,
   },
+  {
+    title: "Sisdol Landfill Simulation",
+    icon: web,
+  },
+  {
+    title: "Panel Discussion",
+    icon: mobile,
+  },
+  {
+    title: "Green College Campaign",
+    icon: backend,
+  },
+  {
+    title: "Green Awards Ceremony",
+    icon: creator,
+  },
+  {
+    title: "Green Awards Ceremony",
+    icon: creator,
+  },
+  {
+    title: "Green Awards Ceremony",
+    icon: creator,
+  },
 ];
 
 const sponsorsData = [
@@ -90,6 +114,18 @@ const sponsorsData = [
       {
         title: "CSS 3",
         icon: css,
+      },
+      {
+        title: "HTML 5",
+        icon: starbucks,
+      },
+      {
+        title: "CSS 3",
+        icon: css,
+      },
+      {
+        title: "HTML 5",
+        icon: starbucks,
       },
     ],
   },
@@ -116,6 +152,26 @@ const sponsorsData = [
       {
         name: "CSS 3",
         icon: css,
+      },
+      {
+        title: "HTML 5",
+        icon: html,
+      },
+      {
+        name: "CSS 3",
+        icon: css,
+      },
+      {
+        title: "HTML 5",
+        icon: html,
+      },
+      {
+        name: "CSS 3",
+        icon: css,
+      },
+      {
+        title: "HTML 5",
+        icon: html,
       },
     ],
   },
@@ -216,8 +272,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Ayush",
-    description: "Prime Minister of Nepal description here.",
+    name: "Ayush Dhakal",
+    description: "Prime Minister of Nepal.",
     tags: [
       {
         name: "",
@@ -237,7 +293,6 @@ const projects = [
       },
     ],
     image: prachanda,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Sumana Shrestha",
@@ -257,7 +312,6 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Binod Chaudhary",
@@ -277,7 +331,6 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Sumana Shrestha",
@@ -297,7 +350,6 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Sumana Shrestha",
@@ -317,7 +369,6 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Sumana Shrestha",
@@ -337,7 +388,44 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Bista",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
   },
 ];
 

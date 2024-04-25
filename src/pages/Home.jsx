@@ -20,7 +20,10 @@ const Home = () => {
       <div className="relative z-0 bg-white">
         <About />
         <Works />
-        <Experience />
+        <div className="mt-8">
+          <Experience />
+        </div>
+
         <Sponsors />
         {/* <Feedbacks/> */}
         <div className="relative z-0">

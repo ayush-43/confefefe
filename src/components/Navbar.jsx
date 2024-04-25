@@ -51,8 +51,36 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full items-center fixed top-0 z-20 bg-green-800`}>
-      <div className={`bg-white ${styles.paddingX} text-green-900 w-full`}>
-        <div className="p-2"></div>
+      <div className={`bg-white text-green-900 w-full flex justify-between`}>
+        <div className="flex gap-2">
+          <img
+            src={"/src/assets/logomain.png"}
+            alt="logo"
+            className="h-15 w-15 object-contain cursor-pointer"
+          />
+          <img
+            src={"/src/assets/logomain.png"}
+            alt="logo"
+            className="h-15 w-15 object-contain cursor-pointer"
+          />
+          <img
+            src={"/src/assets/logomain.png"}
+            alt="logo"
+            className="h-15 w-15 object-contain cursor-pointer"
+          />
+        </div>
+        <div className="flex items-center gap-2">
+          <img
+            src={"/src/assets/logomain.png"}
+            alt="logo"
+            className="h-15 w-15 object-contain cursor-pointer"
+          />
+          <img
+            src={"/src/assets/logomain.png"}
+            alt="logo"
+            className="h-15 w-15 object-contain cursor-pointer"
+          />
+        </div>
       </div>
       <div
         className={`w-full flex justify-between items-center max-w-8xl mx-auto py-5  ${styles.paddingX}`}
