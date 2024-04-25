@@ -24,7 +24,7 @@ const SpeakerCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[280px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -32,19 +32,6 @@ const SpeakerCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-
-          {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div> */}
         </div>
 
         <div className="mt-5">
@@ -114,26 +101,26 @@ const Speakers = () => {
   const panel1Data = speakersPanels.find((data) => data.number === 1);
 
   return (
-    <div className="mt-20 p-10 h-2vh bg-white flex flex-col justify-center items-center">
-      <div className="text-center">
-        <h2 className={styles.sectionHeadText}>Speakers</h2>
-        <div className="mx-auto max-w-[600px]">
-          <p className={`${styles.heroSubText} text-center`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-            quam reprehenderit. Quo esse molestiae reiciendis libero voluptates
-            officiis dignissimos iusto? Odit deserunt odio dolore molestias
-            aperiam porro incidunt temporibus eum.
-          </p>
+    <>
+      <div className="mt-20 p-10 bg-white text-white flex flex-col justify-center items-center">
+        <div className="mt-10">
+          <h2 className={styles.sectionHeadText}>Speakers</h2>
         </div>
-        <div className="flex justify-center mt-4">
-          {panel1Data && (
-            <div className="panel-container text-center bg-gray-200 p-20 pr-6  rounded-md">
-              <Panels panel={panel1Data} />
-            </div>
-          )}
-        </div>
+        <p className="text-black">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quam
+          reprehenderit. Quo esse molestiae reiciendis libero voluptates
+          officiis dignissimos iusto? Odit deserunt odio dolore molestias
+          aperiam porro incidunt temporibus eum.
+        </p>
       </div>
-    </div>
+      <div className="p-10 h-2vh bg-white flex flex-col justify-center items-center ">
+        {panel1Data && (
+          <div className="panel-container text-center bg-gray-200 p-20 pr-6 rounded-md">
+            <Panels panel={panel1Data} />
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

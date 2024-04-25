@@ -57,7 +57,7 @@ const Experience = () => {
         id="schedule"
         className="text-center"
       >
-        <p className={styles.sectionSubText}>Conference Timeline</p>
+        {/* <p className={styles.sectionSubText}>Conference Timeline</p> */}
         <h2 className={styles.sectionHeadText}>Timeline</h2>
       </motion.div>
 

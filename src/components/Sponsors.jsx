@@ -17,10 +17,9 @@ const Sponsors = () => {
   return (
     <div id="sponsors" className="flex flex-col items-center justify-center">
       <h2 className={styles.sectionHeadText}>Sponsors</h2>
-
       {sponsorsData.map((sponsor) => (
         <div className="flex flex-col mt-10" key={sponsor.title}>
-          <div>
+          <div className="flex flex-col items-center justify-center">
             <h2 className={styles.sectionSubText}>{sponsor.title}</h2>
           </div>
           <div className="flex flex-row flex-wrap justify-center">
