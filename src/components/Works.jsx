@@ -19,7 +19,7 @@ const ProjectCard = ({ index, name, description, image }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[280px] w-full"
+        className="bg-white p-5 rounded-2xl sm:w-[280px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -32,7 +32,7 @@ const ProjectCard = ({ index, name, description, image }) => {
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-black font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
       </Tilt>
@@ -43,28 +43,36 @@ const ProjectCard = ({ index, name, description, image }) => {
 const Works = () => {
   const navigate = useNavigate();
   return (
-    <>
-      <motion.div variants={textVariant()} className="text-center">
-        <h2 className={styles.sectionHeadText}>Our Speakers</h2>
-      </motion.div>
+    <div className="min-h-screen flex flex-col justify-between">
+      <div>
+        <motion.div variants={textVariant()} className="text-center">
+          <h2 className="text-white font-extrabold md:text-[60px]">
+            Our Speakers
+          </h2>
+        </motion.div>
 
-      <div className="w-full">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] leading-[30px] text-center"
-        >
-          Join us on this revolutionary discussion about Climate Change and
-          Waste Management.
-        </motion.p>
-      </div>
-      <div className="bg-gray-300 px-10 py-8">
-        <div className="grid grid-cols-4 gap-12">
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
+        <div className="w-full">
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-3 text-secondary text-[17px] leading-[30px] text-center text-white "
+          >
+            Join us on this revolutionary discussion about Climate Change and
+            Waste Management.
+          </motion.p>
+        </div>
+        <div className="py-8">
+          <div className="grid grid-cols-4 gap-10">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))}
+          </div>
         </div>
       </div>
-      <div className="mt-10 flex flex-col items-center justify-center">
+      <div className="py-5 flex items-center justify-center">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           onClick={() => navigate("/speakers")}
@@ -72,7 +80,7 @@ const Works = () => {
           See all..
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

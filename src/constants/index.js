@@ -462,12 +462,6 @@ const Highlights = [
   },
 ];
 
-// const AwardCard = [
-//   {
-//     title:
-//   },
-// ]
-
 export {
   services,
   sponsorsData,

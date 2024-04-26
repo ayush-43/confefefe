@@ -19,7 +19,10 @@ const Home = () => {
 
       <div className="relative z-0 bg-white">
         <About />
-        <Works />
+        <div className="bg-green-800">
+          <Works />
+        </div>
+
         <div className="mt-8">
           <Experience />
         </div>
