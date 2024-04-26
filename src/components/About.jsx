@@ -9,6 +9,8 @@ import { max } from "three/examples/jsm/nodes/Nodes.js";
 import { SectionWrapper } from "../hoc";
 import { useNavigate } from "react-router-dom";
 import carrentImage from "../assets/carrent.png";
+// import Card from "./Card";
+// import { projects } from "../constants";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -41,12 +43,16 @@ const About = () => {
     <>
       <div className="flex flex-wrap items-center justify-center">
         <motion.div variants={textVariant()} className="text-center">
-          <h2 className={`mt-2 ${styles.sectionHeadText}`}>About WMCC</h2>
+          <h2 className="text-green-800 font-black md:text-[60px]">
+            About WMCC
+          </h2>
+          <hr className="border-b-6 border-black w-100 mx-auto mt-1" />
         </motion.div>
+
         <div className="flex flex-wrap items-center justify-center mt-4">
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-green-900 text-[20px] leading-[30px] max-w-[50%] pr-3"
+            className="mt-4 text-green-900 text-[20px] leading-[30px] max-w-[100%] pr-3"
           >
             WMCC serves as a vital platform for fostering dialogue, sharing
             insights, and mobilizing stakeholders towards sustainable solutions.
@@ -57,16 +63,21 @@ const About = () => {
             stakeholders towards sustainable solutions. By bringing together
             industry leaders, policymakers, innovators, and other stakeholders,
             KWMC aims to address the multifaceted challenges of waste management
-            comprehensively.
+            comprehensively. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Excepturi officiis minima nesciunt sapiente, perspiciatis
+            error ipsa explicabo minus molestiae nam quidem culpa quasi labore
+            deserunt tempore accusamus repellendus nostrum necessitatibus.
           </motion.p>
-          <div className="max-w-[50%]">
-            {/* Replace 'imageSrc' with the actual source of your image */}
+          {/* <div className="max-w-[50%]">
             <img src={carrentImage} alt="About WMCC" className="w-full" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-20 text-center">
-        <h2 className={styles.sectionHeadText}>Conference Highlights</h2>
+        <h2 className="text-green-800 font-black md:text-[60px]">
+          Conference Highlights
+        </h2>
+        <hr className="border-b-6 border-black w-1/2 mx-auto mt-1" />
 
         <p className="mt-4 text-green-900 text-[20px] leading-[30px] justify">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta,
@@ -92,6 +103,11 @@ const About = () => {
           See more...
         </button>
       </div>
+      {/* <div className="flex flex-wrap justify-center">
+        {projects.map((project, index) => (
+          <Card key={`project-${index}`} {...project} />
+        ))}
+      </div> */}
     </>
   );
 };
