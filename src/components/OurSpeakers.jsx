@@ -6,7 +6,6 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useNavigate } from "react-router-dom";
-// import { OurSpeakers } from "../components";
 
 const ProjectCard = ({ index, name, description, image }) => {
   return (
@@ -44,24 +43,26 @@ const ProjectCard = ({ index, name, description, image }) => {
 const OurSpeakers = () => {
   const navigate = useNavigate();
   return (
-    <div className="min-h-screen flex flex-col justify-between py-24">
+    <div className="min-h-screen flex flex-col justify-between">
       <div>
-        <div className="text-center">
-          <h2 className="text-black font-extrabold md:text-[60px]">
+        <motion.div variants={textVariant()} className="text-center">
+          <h2 className="text-white font-extrabold md:text-[60px]">
             Our Speakers
           </h2>
-          <hr className="border-b-6 border-black w-48 mx-auto mt-1" />
-        </div>
+        </motion.div>
 
         <div className="w-full">
-          <p className="mt-3 text-secondary text-[17px] leading-[30px] text-center text-black ">
+          <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className="mt-3 text-secondary text-[17px] leading-[30px] text-center text-white "
+          >
             Join us on this revolutionary discussion about Climate Change and
             Waste Management.
-          </p>
+          </motion.p>
         </div>
         <div className="py-8">
           <div className="grid grid-cols-4 gap-10">
-            {projects.map((project, index) => (
+            {projects.slice(0, 8).map((project, index) => (
               <ProjectCard
                 key={`project-${index}`}
                 index={index}
@@ -70,6 +71,14 @@ const OurSpeakers = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="py-5 flex items-center justify-center">
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          onClick={() => navigate("/speakers")}
+        >
+          See all..
+        </button>
       </div>
     </div>
   );
