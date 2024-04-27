@@ -50,8 +50,8 @@ const About = () => {
         </motion.div>
 
         <div className="flex flex-wrap items-center justify-center mt-4">
-          <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
+          <p
+            // variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-green-900 text-[20px] leading-[30px] max-w-[100%] pr-3"
           >
             WMCC serves as a vital platform for fostering dialogue, sharing
@@ -67,7 +67,7 @@ const About = () => {
             elit. Excepturi officiis minima nesciunt sapiente, perspiciatis
             error ipsa explicabo minus molestiae nam quidem culpa quasi labore
             deserunt tempore accusamus repellendus nostrum necessitatibus.
-          </motion.p>
+          </p>
           {/* <div className="max-w-[50%]">
             <img src={carrentImage} alt="About WMCC" className="w-full" />
           </div> */}
@@ -91,14 +91,14 @@ const About = () => {
         </p>
       </div>
       <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
+        {services.slice(0, 4).map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center px-5 rounded-full">
         <button
           onClick={() => navigate("/highlights")}
-          className="text-green-600 hover:cursor-pointer border-green-600 px-4 py-4 mt-5 font-bold"
+          className="button text-green-600 hover:cursor-pointer border-green-600 px-4 py-8 mt-5 font-bold text-l "
         >
           See more...
         </button>

@@ -10,7 +10,10 @@ const Footer = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="flex justify-center bg-gray-200 py-1">
-        <button className="button text-white bg-black w-72 py-4 rounded-2xl text-xl">
+        <button
+          className="button text-white bg-black w-72 py-4 rounded-2xl text-xl"
+          style={{ cursor: "default" }}
+        >
           CONTACT US
         </button>
       </div>

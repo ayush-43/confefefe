@@ -12,7 +12,7 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt className="xs:w-[250px] w-full" id="about">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="relative"
       >
         <div
           options={{
@@ -20,12 +20,17 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-green-700 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col rounded-lg"
+          className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white-100 text-[20px] font-bold text-center">
-            {title}
-          </h3>
+          <div className="bg-green-700 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col rounded-lg relative">
+            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            <h3 className="text-white-100 text-[20px] font-bold text-center">
+              {title}
+            </h3>
+          </div>
+        </div>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 bg-green-800 text-white font-bold text-lg rounded-full w-10 h-10 flex items-center justify-center z-10 mt-[-40px]">
+          {index + 1}
         </div>
       </motion.div>
     </Tilt>
@@ -79,19 +84,21 @@ const GreenAwards = () => {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex flex-col items-center mt-20 p-10 bg-white">
+      <div className="flex flex-col items-center py-28 bg-white">
         <div>
           <div className="text-center mt-6">
-            <h2 className={styles.sectionHeadText}>Green Awards</h2>
+            <h2 className="text-green-800 font-black md:text-[60px]">
+              Green Awards
+            </h2>
+            <hr className="border-b-6 border-black w-1/2 mx-auto mt-1" />
           </div>
-          <p className="text-black text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto
-            qui ipsum vero libero, maxime voluptatem et magnam expedita.
-            Ratione, iusto. Repudiandae, quos corrupti perferendis perspiciatis
-            placeat eum dolore molestias.{" "}
-          </p>
+          <div className="flex flex-wrap items-center justify-center mt-4">
+            <p className="text-black text-xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
-        <div className="mt-20 gap-10 grid grid-cols-4">
+        <div className="gap-16 grid grid-cols-4 py-20">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
