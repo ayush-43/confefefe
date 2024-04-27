@@ -51,24 +51,26 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <div className="page">
-      <motion.div
-        variants={textVariant()}
-        id="schedule"
-        className="text-center"
-      >
-        {/* <p className={styles.sectionSubText}>Conference Timeline</p> */}
-        <h2 className={styles.sectionHeadText}>Timeline</h2>
-      </motion.div>
+    <>
+      <div className="page">
+        <motion.div
+          variants={textVariant()}
+          id="schedule"
+          className="text-center"
+        >
+          <h2 className="text-green-800 md:text-[60px]">Timeline</h2>
+          <hr className="border-b-6 border-black w-44 mx-auto mt-1" />
+        </motion.div>
 
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
-        </VerticalTimeline>
+        <div className="mt-20 flex flex-col">
+          <VerticalTimeline>
+            {experiences.map((experience, index) => (
+              <ExperienceCard key={index} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

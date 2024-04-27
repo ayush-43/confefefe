@@ -23,11 +23,12 @@ const Home = () => {
           <Works />
         </div>
 
-        <div className="mt-8">
+        <div className="py-8 ">
           <Experience />
         </div>
-
-        <Sponsors />
+        <div className="text-2xl">
+          <Sponsors />
+        </div>
         {/* <Feedbacks/> */}
         <div className="relative z-0">
           <Contact />
