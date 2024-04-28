@@ -21,6 +21,7 @@ import {
   shopify,
   prachanda,
   jobit,
+  // binod,
   tripguide,
   threejs,
 } from "../assets";
@@ -311,7 +312,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: mobile,
   },
   {
     name: "Binod Chaudhary",
@@ -349,7 +350,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: prachanda,
   },
   {
     name: "Sumana Shrestha",
