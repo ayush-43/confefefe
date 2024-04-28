@@ -10,18 +10,8 @@ import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({ index, name, description, image }) => {
   return (
-    <motion.div
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      id="speakers"
-    >
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-white p-5 rounded-2xl sm:w-[280px] w-full"
-      >
+    <div variants={fadeIn("up", "spring", index * 0.5, 0.75)} id="speakers">
+      <div className="bg-white p-5 rounded-2xl sm:w-[280px] w-full">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -36,8 +26,9 @@ const ProjectCard = ({ index, name, description, image }) => {
           <h3 className="text-black font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
-      </Tilt>
-    </motion.div>
+      </div>
+      {/* </Tilt> */}
+    </div>
   );
 };
 
@@ -47,14 +38,14 @@ const OurSpeakers = () => {
     <div className="min-h-screen flex flex-col justify-between py-24">
       <div>
         <div className="text-center">
-          <h2 className="text-black font-extrabold md:text-[60px]">
+          <h2 className="text-white font-extrabold md:text-[60px]">
             Our Speakers
           </h2>
-          <hr className="border-b-6 border-black w-48 mx-auto mt-1" />
+          <hr className="border-b-6 border-white w-48 mx-auto mt-1" />
         </div>
 
         <div className="w-full">
-          <p className="mt-3 text-secondary text-[17px] leading-[30px] text-center text-black ">
+          <p className="mt-3 text-[17px] leading-[30px] text-center text-white ">
             Join us on this revolutionary discussion about Climate Change and
             Waste Management.
           </p>

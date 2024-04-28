@@ -1,16 +1,10 @@
-const Card = ({ imageSrc, name, profession, description }) => {
+const Card = ({ index, title, icon }) => {
   return (
-    <div className="max-w-xs mx-auto relative overflow-hidden rounded-lg shadow-lg bg-white w-64 h-64">
-      <img
-        className="w-full h-32 object-cover object-center"
-        src={imageSrc}
-        alt="Card"
-      />
-      <div className="absolute bottom-0 left-0 right-0 bg-white p-4">
-        <h3 className="text-gray-800 font-semibold text-lg">{name}</h3>
-        <p className="text-gray-600 text-sm">{profession}</p>
-        <p className="text-gray-700">{description}</p>
-      </div>
+    <div className="bg-green-700 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col rounded-lg mx-5">
+      <img src={icon} alt={title} className="w-16 h-16" />
+      <h3 className="text-white-100 text-[20px] font-bold text-center ">
+        {title}
+      </h3>
     </div>
   );
 };

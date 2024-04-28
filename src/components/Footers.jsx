@@ -9,18 +9,18 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <div className="flex flex-col w-full">
-      <div className="flex justify-center bg-gray-200 py-1">
+      <div className="flex justify-center bg-gray-200 py-4">
         <button
-          className="button text-white bg-black w-72 py-4 rounded-2xl text-xl"
+          className="button text-white bg-black w-72 py-6 rounded-2xl text-xl"
           style={{ cursor: "default" }}
         >
           CONTACT US
         </button>
       </div>
       <div>
-        <div className="flex gap-10 bg-gray-200 text-black justify-center py-4 text-lg font-bold">
-          <div className="flex flex-col gap-3 ">
-            <IoCallOutline className="w-full text-black text-xl" />
+        <div className="flex gap-16 bg-gray-200 text-black justify-center py-4 text-lg font-bold">
+          <div className="flex flex-col gap-3 text-xl">
+            <IoCallOutline className="w-full text-black" />
             +977 9847021453
           </div>
           <div className="flex flex-col gap-3 text-xl">
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center text-lg text-white bg-[#166534] py-6 h-full ">
+      <div className="text-center text-xl text-white bg-[#166534] py-6 h-full ">
         June 5, 2024 | World Environment Day <br></br>Hotel Soaltee, Kathmandu
         <br></br>
         <br></br>© 2024 WMCC. All rights reserved.
