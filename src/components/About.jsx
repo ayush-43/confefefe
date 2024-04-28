@@ -8,35 +8,34 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { max } from "three/examples/jsm/nodes/Nodes.js";
 import { SectionWrapper } from "../hoc";
 import { useNavigate } from "react-router-dom";
-import carrentImage from "../assets/carrent.png";
-// import Card from "./Card";
-// import { projects } from "../constants";
+import SliderPage from "./SliderPage";
+import Card from "./Card";
 
-const ServiceCard = ({ index, title, icon }) => {
-  return (
-    <Tilt className="xs:w-[250px] w-full" id="about">
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-      >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className="bg-green-700 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col rounded-lg"
-        >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white-100 text-[20px] font-bold text-center">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
-  );
-};
-
+// const ServiceCard = ({ index, title, icon }) => {
+//   return (
+//     <Tilt className="xs:w-[250px] w-full" id="about">
+//       <motion.div
+//         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+//         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+//       >
+//         <div
+//           options={{
+//             max: 45,
+//             scale: 1,
+//             speed: 450,
+//           }}
+//           className="bg-green-700 py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col rounded-lg"
+//         >
+//           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+//           <h3 className="text-white-100 text-[20px] font-bold text-center">
+//             {title}
+//           </h3>
+//         </div>
+//       </motion.div>
+//     </Tilt>
+//   );
+// };
+<Card />;
 const About = () => {
   const navigate = useNavigate();
   return (
@@ -90,24 +89,9 @@ const About = () => {
           officia labore.
         </p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.slice(0, 4).map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+      <div className="py-20">
+        <SliderPage />
       </div>
-      <div className="flex justify-center px-5 rounded-full">
-        <button
-          onClick={() => navigate("/highlights")}
-          className="button text-green-600 hover:cursor-pointer border-green-600 px-4 py-8 mt-5 font-bold text-l "
-        >
-          See more...
-        </button>
-      </div>
-      {/* <div className="flex flex-wrap justify-center">
-        {projects.map((project, index) => (
-          <Card key={`project-${index}`} {...project} />
-        ))}
-      </div> */}
     </>
   );
 };

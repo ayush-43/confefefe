@@ -69,23 +69,25 @@ const Navbar = () => {
       <div
         className={`w-full flex justify-between items-center max-w-8xl mx-auto py-4  ${styles.paddingX}`}
       >
-        <div
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img
-            src={"/src/assets/logomain.png"}
-            alt="logo"
-            className="h-15 w-15 object-contain cursor-pointer"
-          />
-          <p className="text-white text-[18px] font-bold cursor-pointer tracking-wider">
-            Waste Management & &nbsp;
-            <span className="sm:block hidden">Climate Conference</span>
-          </p>
-        </div>
+        <Link to="/">
+          <div
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <img
+              src={"/src/assets/logomain.png"}
+              alt="logo"
+              className="h-15 w-15 object-contain cursor-pointer"
+            />
+            <p className="text-white text-[18px] font-bold cursor-pointer tracking-wider">
+              Waste Management & &nbsp;
+              <span className="sm:block hidden">Climate Conference</span>
+            </p>
+          </div>
+        </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li

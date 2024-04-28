@@ -46,7 +46,7 @@ const OurSpeakers = () => {
     <div className="min-h-screen flex flex-col justify-between">
       <div>
         <motion.div variants={textVariant()} className="text-center">
-          <h2 className="text-white font-extrabold md:text-[60px]">
+          <h2 className="text-white font-extrabold md:text-[60px] py-10 ">
             Our Speakers
           </h2>
         </motion.div>

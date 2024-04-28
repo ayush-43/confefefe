@@ -3,27 +3,15 @@ import {
   backend,
   creator,
   web,
-  javascript,
-  typescript,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
   shopify,
   prachanda,
   jobit,
-  // binod,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -44,10 +32,6 @@ export const navLinks = [
     title: "Schedule",
   },
   {
-    id: "highlights",
-    title: "Highlights",
-  },
-  {
     id: "greenawards",
     title: "Green Awards",
   },
@@ -65,42 +49,52 @@ const services = [
   {
     title: "Sisdol Landfill Simulation",
     icon: web,
+    id: 1,
   },
   {
     title: "Panel Discussion",
     icon: mobile,
+    id: 2,
   },
   {
     title: "Green College Campaign",
     icon: backend,
+    id: 3,
   },
   {
     title: "Green Awards Ceremony",
     icon: creator,
+    id: 4,
   },
   {
     title: "Sisdol Landfill Simulation",
     icon: web,
+    id: 5,
   },
   {
     title: "Panel Discussion",
     icon: mobile,
+    id: 6,
   },
   {
     title: "Green College Campaign",
     icon: backend,
+    id: 7,
   },
   {
     title: "Green Awards Ceremony",
     icon: creator,
+    id: 8,
   },
   {
     title: "Green Awards Ceremony",
     icon: creator,
+    id: 9,
   },
   {
     title: "Green Awards Ceremony",
     icon: creator,
+    id: 10,
   },
 ];
 

@@ -2,13 +2,12 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Sponsors,
-  // Works,
   OurSpeakers,
   StarsCanvas,
   Footers,
+  SliderPage,
 } from "../components";
 
 const Home = () => {
@@ -20,19 +19,18 @@ const Home = () => {
 
       <div className="relative z-0 bg-white">
         <About />
-        {/* <div className="bg-green-800">
-          <Works />
-        </div> */}
-        <div className="bg-green-700">
+        <div className="bg-green-700 ">
           <OurSpeakers />
         </div>
         <div className="py-8 ">
           <Experience />
         </div>
+        {/* <div>
+          <SliderPage />
+        </div> */}
         <div className="text-2xl">
           <Sponsors />
         </div>
-        {/* <Feedbacks/> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

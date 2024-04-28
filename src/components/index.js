@@ -14,6 +14,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Footers from "./Footers";
 import OurSpeakers from "./OurSpeakers";
+import SliderPage from "./SliderPage";
 
 export {
   Hero,
@@ -30,4 +31,5 @@ export {
   StarsCanvas,
   Footers,
   OurSpeakers,
+  SliderPage,
 };
