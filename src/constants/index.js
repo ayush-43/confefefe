@@ -427,6 +427,474 @@ const projects = [
     ],
     image: jobit,
   },
+  {
+    name: "Ayush Dhakal",
+    description: "Prime Minister of Nepal.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Ayush",
+        description: "Ayush dai",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: prachanda,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Binod Chaudhary",
+    description: "Binod Chaudhary Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Bista",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Ayush Dhakal",
+    description: "Prime Minister of Nepal.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Ayush",
+        description: "Ayush dai",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: prachanda,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Binod Chaudhary",
+    description: "Binod Chaudhary Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Bista",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Ayush Dhakal",
+    description: "Prime Minister of Nepal.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Ayush",
+        description: "Ayush dai",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: prachanda,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Binod Chaudhary",
+    description: "Binod Chaudhary Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Shrestha",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
+  {
+    name: "Sumana Bista",
+    description: "Sumana Shrestha Description here.",
+    tags: [
+      {
+        name: "",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: jobit,
+  },
 ];
 
 const speakersPanels = [

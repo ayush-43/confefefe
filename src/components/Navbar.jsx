@@ -55,7 +55,7 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full items-center fixed z-20 bg-green-800`}>
-      <div className={`bg-white text-black-100 w-full flex justify-between`}>
+      {/* <div className={`bg-white text-black-100 w-full flex justify-between`}>
         <div className="flex gap-5 py-1" style={{ height: "15px" }}>
           <FaFacebookF className="text-xl" />
           <FaInstagram className="text-xl" />
@@ -65,7 +65,7 @@ const Navbar = () => {
           <IoCallOutline className="text-lg" />
           <p>9847012345</p>
         </div>
-      </div>
+      </div> */}
       <div
         className={`w-full flex justify-between items-center max-w-8xl mx-auto py-4  ${styles.paddingX}`}
       >
